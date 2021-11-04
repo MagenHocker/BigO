@@ -64,7 +64,7 @@ function findNemo(array) {
     }
   }
   let t1 = performance.now(); // end timer to look for performance
-  console.log('Call to find nemo took ' + (t1 - t0))
+  console.log('Call to find nemo took ' + (t1 - t0));
 }
 
 //findNemo(nemo);
@@ -74,7 +74,7 @@ function findNemo(array) {
 //const boxes = [0, 1, 2, 3, 4];
 function logFirstTwoBoxes(array) {
   console.log(array[0]);
-  console.log(array[1])
+  console.log(array[1]);
 }
 
 logFirstTwoBoxes(boxes); // O(2) -- operations
