@@ -1,5 +1,37 @@
 const {performance} = require('perf_hooks'); // required to define performance
 
+
+console.log("--------------- Twitter Exercises ----------------------------");
+
+// Return the first and last item in a list
+// This should be an O(1) runtime to grab the first and last value
+const array1 = ['hi', 'my', 'friend'];
+
+// if array1 were a list[][] or 2d array it would be O(n^2) bc we have to loop
+// through the array storing all of the arrays and the array that it is
+// storing
+
+console.log("--------------------- Space Complexity -----------------------");
+
+// Space Complexity -- O(1)
+// We don't take into account the input size only what's in the function
+function boo(n) {
+  for (let i = 0; i < n.length; i++) {
+    console.log('booooo!')
+  }
+}
+
+
+// Space complexity -- O(n) -> for the array that we created
+function arrayOfHiNTimes(n) {
+  let hiArray = [];
+  for (let i = 0; i < n.length; i++) {
+    hiArray[i] = 'hi';
+  }
+  return hiArray;
+}
+
+
 // log all pairs
 // What is the runtime of this algorithm?
 // O(n^2) -- because of the nested for loop
@@ -14,7 +46,7 @@ function logPairs(array) {
 
 logPairs(boxes);
 
-console.log("-------------------------------------------------------------")
+console.log("-------------------------------------------------------------");
 
 const nemo = ['nemo']; // an array that contains the string nemo
 const everyone = ['dory', 'gill', 'dorlin', 'nigel',
